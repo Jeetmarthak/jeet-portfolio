@@ -31,7 +31,7 @@ function Hero() {
 
       <TypeAnimation
         sequence={[
-          "Cybersecurity Trainee @TOPS Technologies",
+          "Cybersecurity Trainee",
           2000,
           "Aspiring Full Stack Developer",
           2000,

@@ -9,6 +9,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Background from "./components/Background";
 import Footer from "./components/Footer";
+import particlesBackground from "./components/particlesBackground";
 function App() {
 
   return (
@@ -16,7 +17,7 @@ function App() {
     <>
       
         <Navbar />
-
+        <particlesBackground />
   <Hero />
 
   <About />
