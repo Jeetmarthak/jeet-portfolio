@@ -22,9 +22,7 @@ function Navbar() {
 
       </ul>
 
-      <button className="resume-btn">
-        Resume
-      </button>
+     
 
     </nav>
   );

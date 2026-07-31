@@ -1,5 +1,9 @@
+import FadeIn from "./FadeIn";
+
 function About() {
   return (
+        <FadeIn>
+
     <section className="about-section" id="about">
 
       <h2>About Me</h2>
@@ -32,6 +36,7 @@ function About() {
 
 
     </section>
+     </FadeIn>
   );
 }
 

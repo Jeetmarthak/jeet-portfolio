@@ -1,18 +1,33 @@
 import { TypeAnimation } from "react-type-animation";
+import resume from "../assets/Jeetresume.pdf";
 import Terminal from "./Terminal";
+import { FaDownload, FaRocket } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+
 
 function Hero() {
  return (
-  <section className="hero">
+<motion.section
+  className="hero"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
 
-    <div className="left">
+    <motion.div
+  className="left"
+  initial={{ opacity: 0, x: -80 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+>
 
 
-      <p className="terminal">{" > whoami"}</p>
+     <p className="hero-greeting"> Hello, I'm</p>
 
-      <h1>
-        Jeet <span>Marthak</span>
-      </h1>
+<h1 className="hero-name">
+  Jeet Marthak
+</h1>
 
       <TypeAnimation
         sequence={[
@@ -29,30 +44,41 @@ function Hero() {
       />
 
       <p className="about">
-        Passionate about Cybersecurity, Networking, Secure Software Development, and modern Web Technologies. I enjoy building secure and user-friendly applications while continuously expanding my technical knowledge
+       Passionate about Cybersecurity, Networking, Cloud Computing, and modern Web Technologies.
+      Currently pursuing a BCA at JG University while building practical CyberSecurity skills at TOPS Technologies.
       </p>
+<div className="buttons">
 
-      <div className="buttons">
+  <a
+    href={resume}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="primary"
+  >
+    <FaDownload />
+    <span>View Resume</span>
+  </a>
 
-        <button className="primary">
-          Download Resume
-        </button>
+  <a
+    href="#projects"
+    className="secondary"
+  >
+    <FaRocket />
+    <span>View Projects</span>
+  </a>
 
-        <button className="secondary">
-          View Projects
-        </button>
+</div>
 
-      </div>
-
-    </div>
-
-    <div className="right">
-
-      <Terminal />
-
-    </div>
-
-  </section>
+</motion.div>
+<motion.div
+  className="right"
+  initial={{ opacity: 0, x: 80 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, delay: 0.4 }}
+>
+<Terminal />
+</motion.div>
+  </motion.section>
 );
 }
 

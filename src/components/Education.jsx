@@ -1,34 +1,43 @@
+import FadeIn from "./FadeIn";
+
 function Education() {
   return (
     <section className="education-section" id="education">
 
-      <h2>Education</h2>
+      <FadeIn>
+        <h2>Education</h2>
+      </FadeIn>
 
-      <div className="education-card">
+      <FadeIn delay={0}>
+        <div className="education-card">
 
-        <h3>Bachelor of Computer Applications (BCA)</h3>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
 
-        <h4>JG University, Ahmedabad</h4>
+          <h4>JG University, Ahmedabad</h4>
 
-        <p>
-          Currently Pursuing Bachelor of Computer Applications With A Focus On Skils. And
-           Cloud Computing, Networking and Mobile Application
-          Development.
-        </p>
-      </div>
+          <p>
+            Currently pursuing a Bachelor of Computer Applications with a focus on
+            Web Development, Cloud Computing, Networking, and Mobile Application
+            Development.
+          </p>
 
-      <div className="education-card">
+        </div>
+      </FadeIn>
 
-        <h3>Cybersecurity Training</h3>
+      <FadeIn delay={0.2}>
+        <div className="education-card">
 
-        <h4>TOPS Technologies</h4>
+          <h3>Cybersecurity Training</h3>
 
-        <p>
-          Learning Computer Hardware, Networking, Cybersecurity Fundamentals,
-          and Practical Security Concepts With Hands-On Training.
-        </p>
+          <h4>TOPS Technologies</h4>
 
-      </div>
+          <p>
+            Learning Computer Hardware, Networking, Cybersecurity Fundamentals,
+            and practical security concepts through hands-on training.
+          </p>
+
+        </div>
+      </FadeIn>
 
     </section>
   );

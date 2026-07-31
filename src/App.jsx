@@ -6,24 +6,30 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
-
+import Contact from "./components/Contact";
+import Background from "./components/Background";
+import Footer from "./components/Footer";
 function App() {
 
   return (
 
     <>
+      
+        <Navbar />
 
-      <Navbar />
+  <Hero />
 
-      <Hero />
+  <About />
 
-      <About />
+  <Skills />
 
-      <Skills />
+  <Projects />
 
-      <Projects />
+  <Education />
 
-      <Education />
+  <Contact />
+
+  <Footer />
 
     </>
 
